@@ -27,6 +27,15 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
+/** Fetches the current date from the server and adds it to the page. */
+async function showServerTime() {
+    const responseFromServer = await fetch('/date');
+    const textFromResponse = await responseFromServer.text();
+  
+    const dateContainer = document.getElementById('date-container');
+    dateContainer.innerText = textFromResponse;
+  }
+
 jQuery(document).ready(function( $ ) {
 
     // Smooth scroll for the menu and links with .scrollto classes
@@ -119,4 +128,3 @@ jQuery(document).ready(function( $ ) {
     ];
     var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
   });
-  
