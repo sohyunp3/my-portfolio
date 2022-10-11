@@ -160,7 +160,7 @@ body {
   /* Header Wrap */
   
   #headerwrap {
-    background: url(../img/back.jpeg) no-repeat center top;
+    background: url(img/back.jpeg) no-repeat center top;
     margin-top: 60px;
     padding-top: 140px;
     text-align: center;
