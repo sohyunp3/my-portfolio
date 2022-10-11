@@ -1,19 +1,482 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sohyun Park The Engineer</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/icon.jpg" onerror="this.onerror=null; this.src='Default.jpg'" rel="icon">
+  <link href="img/icon.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="64" data-target="#section-topbar">
+
+  <div id="section-topbar">
+    <div id="topbar-inner">
+      <div class="container">
+        <div class="row">
+          <div class="dropdown">
+            <ul id="nav" class="nav">
+              <li class="menu-item"><a class="smothscroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#resume" title="Resume"><i class="fa fa-file-text-o"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#work" title="Works"><i class="fa fa-briefcase"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+            <!--/ uL#nav -->
+          </div>
+          <!-- /.dropdown -->
+
+          <div class="clear"></div>
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+
+      <div class="clear"></div>
     </div>
-  </body>
+    <!--/ #topbar-inner -->
+  </div>
+  <!--/ #section-topbar -->
+
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-12">
+          <h1>Sohyun Park</h1>
+          <h3>Software Engineer Student | parksh3565@gmail.com</h3>
+          Click <a onclick="showServerTime()" href="javascript:void(0);">here</a> to see the server's current date.</p>
+          <p id="date-container"></p>
+
+        </div>
+        <!--/.col-lg-12 -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.#headerwrap -->
+
+
+  <section id="about" name="about">
+    <div id="intro">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5>ABOUT</h5>
+          </div>
+          <div class="col-lg-6">
+            <p>I'm attending the University of Illinois at Urbana-Champaign, majoring Computer Science. My interests are AI, media, and web development.
+              I have expereinece in various areas which have helped me to become a versatile engineer.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <a href="img/resume.pdf" download> DOWNLOAD PDF</a>
+            </p>
+          </div>
+
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+    </div>
+    <!--/ #intro -->
+  </section>
+
+
+  <section id="resume" name="resume">
+    <!--EDUCATION DESCRIPTION -->
+    <div class="container desc">
+      <div class="row">
+
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>EDUCATION</h5>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            <t>Bachelor of Science in Computer Science</t><br/> University of Illinois at Urbana-Champaign <br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>
+            <sm>GRADUATING IN MAY 2024</sm><br/>
+            <imp>
+              <sm>IN PROGRESS</sm>
+            </imp>
+          </p>
+        </div>
+
+      </div>
+      <!--/.row -->
+      <br>
+      <hr>
+    </div>
+    <!--/.container -->
+  </section>
+
+
+  <!--WORK DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+
+      <div class="col-lg-2 col-lg-offset-1">
+        <h5>WORK</h5>
+
+      </div>
+      <div class="col-lg-6">
+        <p>
+          <t>Student Software Engineer</t><br/> Google Software Product Sprint Program <br/>
+        </p>
+        <p>
+          <more>
+            <ul>
+              <li>Designed a Java web application for data sharing between family members for their effective communication</li>
+              <li>Developed log-in system, photo gallery, forum, and to-do list utilizing Google cloud storage and data store in a 3-person team</li>
+              <li>Received active feedback from Google engineers in a weekly team meeting after a presentation to build a universal web application</li>
+            </ul>
+          </more>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>May. 2022 - Aug. 2022t</sm>
+        </p>
+      </div>
+
+      </div>
+      <div class="col-lg-6 col-lg-offset-3">
+        <p>
+          <t>Undergraduate Research Assistant</t><br/> Distributed Autonomous Systems Laboratory <br/>
+        </p>
+        <p>
+          <more>
+            <ul>
+              <li>Integrated crop harvesting and pest detection by designing a soft-arm robot using camera radars and Recurrent Neural Network</li>
+              <li>Improved accuracy of object recognition AI by 3% with a grid search hyperparameter tuning technique</li>
+              <li>Currently refining the delay in movement when target object is found, writing weekly reports regarding improvement made</li>
+            </ul>
+          </more>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>Jan. 2022 - Present</sm>
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-lg-offset-3">
+        <p>
+          <t>Software Engineer Intern</t><br/> Science Gateways Community Institute <br/>
+        </p>
+        <p>
+          <more>
+            <ul>
+              <li>Supported medical professionals to better predict future severity of COVID-19</li>
+              <li>Visualized COVID-19 recovery rate trends using Flask, with focus on easy interfacing via CSV</li>
+              <li>Implemented filtering and adding notes using Unix script to ease search difficulty of persons in administration system
+              </li>
+            </ul>
+          </more>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>Jun. 2021 - Aug. 2021</sm>
+        </p>
+      </div>
+    </div>
+    <!--/.row -->
+    <br>
+    <hr>
+  </div>
+  <!--/.container -->
+
+
+  <!--LEADERSHIP & ACTIVITIES DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-1">
+        <h5>LEADERSHIP & ACTIVITIES</h5>
+      </div>
+      <div class="col-lg-6">
+        <p>
+          <t>Coding Club “Codable” at UIUC</t><br/> Vice President <br/>
+        </p>
+        <p>
+          <more>
+            <ul>
+              <li>Created a semester-long coursework that leverages members' comprehension in Python that explores important topics including dynamic programming and parallel programming</li>
+              <li>Collected image data by web scraping and implemented image classification using the TensorFlow package</li>
+              <li>Presented and code reviewed regarding the progress the team had made each week at the general meeting</li>
+            </ul>
+          </more>
+        </p>  
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>Aug. 2020 - Present</sm>
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-lg-offset-3">
+        <p>
+          <t>CS 124: Intro to Computer Science (Java and Kotlin) at UIUC</t><br/> Course Assistant <br/>
+        </p>
+        <p>
+          <more>
+            <ul>
+              <li>Led help site 2-hours/week to support students in solving homework, fixing errors in their machine project, and preparing for exams</li>
+              <li>Created 3 lecture videos for students to elevate understanding of the course materials</li>
+            </ul>
+          </more>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>Aug.2021 - Dec. 2021</sm>
+        </p>        
+      </div>
+
+    </div>
+    <!--/.row -->
+    <br>
+  </div>
+  <!--/.container -->
+
+
+  <!--SKILLS DESCRIPTION -->
+  <div id="skillswrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>SKILLS</h5>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="java" height="130" width="130"></canvas>
+          <p>Java</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="python" height="130" width="130"></canvas>
+          <p>Python</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="c++" height="130" width="130"></canvas>
+          <p>C++</p>
+          <br>
+        </div>
+
+        <div class="col-lg-3 col-lg-offset-3 centered">
+          <canvas id="html" height="130" width="130"></canvas>
+          <p>HTML</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="css" height="130" width="130"></canvas>
+          <p>CSS</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="javascript" height="130" width="130"></canvas>
+          <p>Javascript</p>
+          <br>
+        </div>
+
+      </div>
+      <!--/.row -->
+      <br>
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/ #skillswrap -->
+
+
+
+  <section id="work" name="work">
+    <!--PROJECTS DESCRIPTION -->
+    <div class="container desc">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>PROJECTS</h5>
+        </div>
+        <div class="col-lg-6">
+          <p><img class="img-responsive" src="img/twitter.jpeg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+          <a href="https://devpost.com/software/russian-ukraine-war-on-tweeter?ref_content=contribution-prompt&ref_feature=engagement&ref_medium=email&utm_campaign=contribution-prompt&utm_content=contribution_reminder&utm_medium=email&utm_source=transactional#app-team"><b>HackIllinois 2022: Analyzing & Visualizing Public Opinions on Russian-Ukraine War</b></a> <br><i>Feb. 2022</i></br>     
+          <p>
+            <more>
+                <li>Developed an interactive website utilizing HTML, CSS, and JavaScript that demonstrated visualization of public opinions and received user input to analyze the stance of user on the war through team’s machine learning model and present related tweets</li>
+                <li>Retrieved Twitter posts using twitter API and processed the data by conducting filtering labels</li>
+                <li>Filtered tweets solely related to the team's topic and conducted a sentiment analysis on the given data</li>      
+            </more>
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><img class="img-responsive" src="img/open_flight.jpeg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+          <a href="https://github.com/sohyunp3/Determining-Cost-Efficiency-Between-Two-Airports"><b>OpenFlights: Determining Cost Efficiency Between Two Airports</b></a> <br><i>Oct. 2021 - Dec. 2021</i></br>  
+          <p>
+            <more>
+              <li>Developed an interactive website utilizing HTML, CSS, and JavaScript that demonstrated visualization of public opinions and received user input to analyze the stance of user on the war through team’s machine learning model and present related tweets</li>
+              <li>Retrieved Twitter posts using twitter API and processed the data by conducting filtering labels</li>
+              <li>Filtered tweets solely related to the team's topic and conducted a sentiment analysis on the given data</li>
+            </more>
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><img class="img-responsive" src="img/rating.jpeg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+          <a href="https://github.com/sohyunp3/cs-course-model"><b>Computer Science Course Model</b></a> <br><i>Sep. 2020 - Dec. 2020</i></br>
+          <p>
+            <more>
+              <li>Built an Android app in which users could type and search CS courses at UIUC and rate the courses using Java for both front- end and back-end development</li>
+              <li>Manipulated Jackson for deserializing JSON file that contained course summary to recover to the original objects of summary</li>
+              <li>Implemented front-end using XML and back-end development based on MySQL, designing UI/UX of the app and developing codebase structure</li>
+            </more>
+          </p>
+        </div>
+
+      </div>
+      <!--/.row -->
+      <br>
+      <br>
+    </div>
+    <!--/.container -->
+  </section>
+
+  <section id="contact" name="contact">
+    <!--FOOTER DESCRIPTION -->
+    <div id="footwrap">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-2">
+            <h5>CONTACT</h5>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              <t>Email</t><br/> parksh3565@gmail.com <br/>
+            </p>
+            <p>
+              <t>Phone</t><br/> +1 (425)381-6522 <br/>
+            </p>
+            <p>
+              <t>Social Links</t><br/>
+              <a href="https://github.com/sohyunp3"><i class="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/lennasohyunpark"><i class="fa fa-linkedin"></i></a>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <sm>CONTACT FORM</sm>
+            </p>
+            <!-- <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                <div class="validate"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for me"></textarea>
+                <div class="validate"></div>
+              </div>
+
+              <div class="loading"></div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <div class="form-send">
+                <button type="submit" class="btn btn-large">Send Message</button> -->
+                <!-- <a href="mailto:someone@example.com">Send email</a>
+              </div>
+
+            </form> -->
+
+          <form class="contact-form php-mail-form" role="form" action="https://formsubmit.co/parksh3565@gmail.com" method="POST" />
+            <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your Name" required>
+            </div>
+
+                <input type="hidden" name="_subject" value="New submission!">
+
+            <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Email Address">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <!-- <input type="text" name="message" placeholder="Your Message" required> -->
+                <textarea class="form-control" name="message" id="contact-message" rows="5"placeholder="Your Message" required></textarea>
+            </div>
+
+                <div class="loading"></div>
+                <div class="error-message"></div>
+
+                <input type="hidden" name="_next" value="https://spark-sps-summer22.appspot.com/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-send">
+                <button type="submit" class="btn btn-large">Send Message</button>
+                </div>
+
+            </div>
+        </form>            
+    </div>
+
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+    </div>
+    <!--/ #footer -->
+  </section>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/chart/chart.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="script.js"></script>
+
+</body>
 </html>
